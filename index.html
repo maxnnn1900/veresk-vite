@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knockout.js Table</title>
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <table>
+    <thead>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+      <th>C = A + B</th>
+    </tr>
+    </thead>
+    <tbody data-bind="foreach: rows">
+    <tr>
+      <td><input type="number" data-bind="value: a" /></td>
+      <td><input type="number" data-bind="value: b" /></td>
+      <td data-bind="text: c"></td>
+    </tr>
+    </tbody>
+  </table>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
